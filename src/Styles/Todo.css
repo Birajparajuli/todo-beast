@@ -1,0 +1,12 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.check-btn {
+  background-color: #00b300;
+  margin-right: 5px;
+}

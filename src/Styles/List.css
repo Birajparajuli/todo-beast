@@ -1,0 +1,14 @@
+ul {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}

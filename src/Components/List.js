@@ -1,6 +1,8 @@
 import React from 'react'
 import Todo from './Todo'
 
+import '../Styles/List.css'
+
 const List = ({ todos, setTodos, filteredTodos }) => {
     return (
         <div className='todo-container'>

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Styles/Todo.css'
 
 const Todo = ({ todos, setTodos, todo }) => {
 
@@ -20,8 +21,14 @@ const Todo = ({ todos, setTodos, todo }) => {
     return (
         <div className="todo">
             <li className={`todo-item ${todo.completed ? "completed" : ''}`}>{todo.text}</li>
-            <button className='check-btn' onClick={completeHandler} >Check</button>
-            <button className='delete-btn' onClick={deleteHandler}>delete</button>
+            <div className="todo-icons">
+                <button className='check-btn' onClick={completeHandler} >
+                    <i className={`fa fa-check-circle`}></i>
+                </button>
+                <button className='delete-btn' onClick={deleteHandler}>
+                    <i className={`fa fa-trash`}></i>
+                </button>
+            </div>
         </div>
     )
 }
